@@ -111,6 +111,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#COMMAND LINE PROMPT
+#Options: HH:MM:SS USERNAME@HOSTNAME CURRENT_DIR (GIT_BRANCH) $
+#Example: 17:13:23 bpdu@probook ~/CURRENT/FOLDER (main) $ 
+export PS1='\t \[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
+
 #PATHS
 export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="$PATH:/opt/Postman"
