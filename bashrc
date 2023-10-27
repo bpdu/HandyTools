@@ -118,7 +118,7 @@ export PS1='\t \[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)
 
 # PATHS
 export SDKMAN_DIR="$HOME/.sdkman"
-export PATH="$PATH:/opt/Postman"
+export PATH="$PATH:/opt/Postman:/home/alexr/JDK"
 
 # ALIASES SHELL
 alias ll='ls -alF'
@@ -126,6 +126,9 @@ alias la='ls -A'
 alias l='ls -CF'
 
 #ALIAS GIT
+alias gita='git add .'
+alias gitb='git branch'
+alias gitc='git commit'
+alias gitl='git log --graph --all --oneline --decorate '
 alias gitl='git log --graph --all --oneline --decorate '
 alias gits='git status'
-
