@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
 fi
 
 # COMMAND LINE PROMPT
-#Options: HH:MM:SS USERNAME@HOSTNAME CURRENT_DIR (GIT_BRANCH) $
+#Appearance: HH:MM:SS USERNAME@HOSTNAME CURRENT_DIR (GIT_BRANCH) $
 #Example: 17:13:23 bpdu@probook ~/CURRENT/FOLDER (main) $ 
 export PS1='\t \[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 
@@ -120,10 +120,12 @@ export PS1='\t \[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)
 export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="$PATH:/opt/Postman"
 
-# ALIASES
+# ALIASES SHELL
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+#ALIAS GIT
 alias gitl='git log --graph --all --oneline --decorate '
 alias gits='git status'
 
